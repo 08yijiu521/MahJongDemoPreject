@@ -1,0 +1,17 @@
+message GetPlayerInformation{
+	optional int32 results = 1; 
+	optional int32 user_id= 2; 
+	optional string user_name= 3; 
+	optional string role= 4;
+        optional int32 endurance=5;
+        optional int32 isOnline=6;
+        optional int32 user_level=7;
+        optional string lastLoginTime=8;
+        optional int32 vip_level=9; 
+        optional int32 dex=10;
+        optional int32 hp=11;
+        optional int32 mp=12;
+        optional int32 def=13;
+        optional int32 ad=14;
+        optional int32 sp=15;
+}

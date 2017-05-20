@@ -1,0 +1,7 @@
+package Cmd;
+message Person
+{
+	required string Name = 1;
+	optional bool Gender = 2;
+	optional string Msg = 3;
+}

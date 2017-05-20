@@ -1,0 +1,10 @@
+message ReqUpdateData{
+     optional int32 int_param1= 1; 
+     optional int32 int_param2= 2; 
+     optional int32 int_param3= 3; 
+     optional int32 int_param4= 4; 
+     optional string string_param1= 5; 
+     optional string string_param2= 6; 
+     optional string string_param3= 7; 
+     optional string string_param4= 8; 
+}

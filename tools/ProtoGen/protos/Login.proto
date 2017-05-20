@@ -1,0 +1,17 @@
+message ReqLogin {
+	optional string account = 1; 
+	optional string password = 2; 
+}
+
+
+
+message ReqCreateAccount{
+	optional string account = 1; 
+	optional string password = 2; 
+        optional string name=3;
+        optional string role=4;
+        optional string headImgStr=5;
+}
+
+
+

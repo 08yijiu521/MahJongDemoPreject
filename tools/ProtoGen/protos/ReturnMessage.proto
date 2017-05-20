@@ -1,0 +1,54 @@
+message ResDefaultInfo {
+     optional int32 results = 1; 
+     optional string details = 2; 
+}
+
+message ResCreateAccount{
+     optional int32 resuts=1;
+     optional string details=2;     
+}
+
+message ResLogin{
+	optional int32 results = 1; 
+	optional int32 user_id= 2; 
+	optional string user_name= 3; 
+	optional string role= 4;
+        optional int32 endurance=5;
+        optional int32 gold=6;
+        optional int32 user_level=7;
+        optional int32 exp=8;
+        optional int32 vip_level=9; 
+        optional string user_head_str=10;
+        optional int32 hp=11;
+        optional int32 mp=12;
+        optional int32 def=13;
+        optional int32 ad=14;
+        optional int32 sp=15;
+        optional int32 dex=16;
+}
+
+message ResGetRole{
+	optional int32 results = 1; 
+	optional int32 user_id= 2; 
+	optional string user_name= 3; 
+	optional string role= 4;
+        optional int32 endurance=5;
+        optional int32 gold=6;
+        optional int32 user_level=7;
+        optional int32 vip_level=9; 
+}
+
+
+message ResSysMessage{
+	optional int32 results = 1;
+ 
+   message MessageModel{
+	optional string type= 1; 
+	optional string title= 2; 
+	optional string content= 3;
+        optional int32 fromId=4;
+        optional int32 toId=5;
+        optional string sendTime=6;
+}
+       repeated MessageModel messageList=2; 
+}

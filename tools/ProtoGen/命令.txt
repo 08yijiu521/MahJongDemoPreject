@@ -1,0 +1,3 @@
+protogen.exe -i:protos\gaohanTest.proto -o:cs\gaohanTest.cs
+
+protogen.exe -i:protos\personInfo.proto -o:cs\personInfo.cs

@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: f7c2b27021fe24040a15c90bfc80ef29
+labels:
+- Save
+- Load
+- Serialize
+- Serialization
+- Delete
+- Upload
+- Download
+- File
+- IO
+- Write
+- Read
+- AudioClip
+- Image
+- MySQL
+- Database
+- Query
+- Mesh
+- Import
+- Export
+- Folder
+- Binary
+- JSON
+- XML
+- Encrypt
+- Encryption
+- Obfuscate
+- Obfuscation
+- Playmaker
+- PHP
+- Web
+- Store
+- Storage
+- Cloud
+- Files
+- Windows
+- Mac
+- WebPlayer
+- WP8
+- Mobile
+- iOS
+- Android
+- Crossplatform
+- writer
+- read
+- reader
+- cloud
+- excel
+- spreadsheet
+- csv
+- xls
+- table
+- export
+PluginImporter:
+  serializedVersion: 1
+  iconMap: {}
+  executionOrder: {}
+  isPreloaded: 0
+  platformData:
+    Android:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+    Any:
+      enabled: 0
+      settings: {}
+    BlackBerry:
+      enabled: 1
+      settings: {}
+    Editor:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+        DefaultValueInitialized: true
+        OS: AnyOS
+    Linux:
+      enabled: 1
+      settings:
+        CPU: x86
+    Linux64:
+      enabled: 1
+      settings:
+        CPU: x86_64
+    LinuxUniversal:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+    OSXIntel:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+    OSXIntel64:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+    OSXUniversal:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+    SamsungTV:
+      enabled: 1
+      settings:
+        STV_MODEL: STANDARD_13
+    Web:
+      enabled: 1
+      settings: {}
+    WebGL:
+      enabled: 1
+      settings: {}
+    WebStreamed:
+      enabled: 1
+      settings: {}
+    Win:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+    Win64:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+    iOS:
+      enabled: 1
+      settings:
+        CompileFlags: 
+        FrameworkDependencies: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

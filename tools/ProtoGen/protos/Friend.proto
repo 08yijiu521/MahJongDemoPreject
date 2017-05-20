@@ -1,0 +1,22 @@
+message FriendsList{
+        optional int32 result=1;
+        optional int32 userId=2;
+        
+     message PlayerModel{
+       optional int32 playerId=1;
+       optional string playerName=2;
+       optional string headStr=3; 
+}   
+
+         repeated PlayerModel playerList=3;
+}
+
+message TradeWithFriend{
+       optional int32 userId=1;
+       optional int32 friendId=2;
+       optional int32 userGold=3;
+       optional int32 friendGold=4;
+       optional string userWeapon=5;
+       optional string friendWeapon=6;
+       optional bool isReady=7;
+}

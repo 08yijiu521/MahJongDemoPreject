@@ -1,0 +1,61 @@
+fileFormatVersion: 2
+guid: 2f5cc45021337446bac3b1be1611d32f
+labels:
+- Save
+- Load
+- Serialize
+- Serialization
+- Delete
+- Upload
+- Download
+- File
+- IO
+- Write
+- Read
+- AudioClip
+- Image
+- MySQL
+- Database
+- Query
+- Mesh
+- Import
+- Export
+- Folder
+- Binary
+- JSON
+- XML
+- Encrypt
+- Encryption
+- Obfuscate
+- Obfuscation
+- Playmaker
+- PHP
+- Web
+- Store
+- Storage
+- Cloud
+- Files
+- Windows
+- Mac
+- WebPlayer
+- WP8
+- Mobile
+- iOS
+- Android
+- Crossplatform
+PluginImporter:
+  serializedVersion: 1
+  iconMap: {}
+  executionOrder: {}
+  isPreloaded: 0
+  platformData:
+    Any:
+      enabled: 0
+      settings: {}
+    Editor:
+      enabled: 1
+      settings:
+        DefaultValueInitialized: true
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

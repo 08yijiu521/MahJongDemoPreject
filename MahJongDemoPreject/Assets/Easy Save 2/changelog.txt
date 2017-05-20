@@ -1,0 +1,205 @@
+v2.7.0
+- Introducing Auto Save, a new code-free way of saving and loading data, accessible from Window > Easy Save 2 > Scene.
+- Support added for Universal Windows Apps.
+- Removed 'Use PlayerPrefs' option from actions. This can be set in Default Settings instead.
+- Fixed issue where DLL would not compile for WP8.
+- ES2.php now automatically sets header content length for servers which fail to do so themselves.
+- Sequential writers can now be used correctly with encryption.
+- Various small bug fixes and performance changes.
+
+v2.6.8
+- File Editor can now create file and add tags to them.
+- File Editor now prompts for a password if the default password is incorrect.
+- ES2.LoadObject method added to load data from a file without specifying a type.
+- PlayMaker actions added: Save/Load Position, Save/Load Rotation and Save/Load Scale.
+
+v2.6.7
+- Support added for Gradients.
+- File Editor now displays ‘double’ fields without truncating the value.
+- Restructured project so that build settings for plugins are automatically set.
+
+v2.6.6
+- Manage Types now has a search bar for easier finding of types.
+- Support for 3D arrays added.
+- ES2Web now includes an AppendToFile method.
+- ScriptableObject now supported by Manage Types.
+- Added Playmaker actions for creating spreadsheets.
+- Added Playmaker action for converting a Texture2D to a PNG string.
+
+v2.6.5
+- ES2Web.UploadFile method added for uploading files to server.
+- Fixed bug where File Editor would repeatedly display error message.
+- PlayMaker actions now use C# file instead of DLL.
+- Other fixes.
+
+v2.6.4
+- Ability to export to spreadsheet (currently as CSV, as supported by Excel, Numbers and other popular spreadsheet software).
+- ES2Web now has a progress and uploadProgress variable to check progress of downloads and uploads.
+- Added UploadRaw action to Playmaker.
+- Playmaker actions now throw appropriate errors when catching exceptions.
+- Fixed bug with File Editor where a single tag in a file might become unselectable.
+
+v2.6.3
+- Added Obfuscation mode, to allow data to be scrambled with better performance than encryption.
+- Support can now be added for Javascript/UnityScript classes in ‘Manage Types’.
+- Fixed issue where Metro DLL wasn’t being updated.
+- File Editor now handles custom classes without causing an error.
+
+v2.6.1 & v2.6.2
+- Temporarily removed ES2_AudioClip while Unity fix a bug at their end.
+
+v2.60
+- Support added for Unity 5.
+- 'Refresh' button added to 'Manage Files...'
+- Pro users no longer have to use the 'Dark' skin when using Editor windows.
+- Playmaker actions can now be installed even if Playmaker isn't located in 'Assets/Playmaker'.
+- link.xml has been moved to Assets folder so it no longer requires a manual install.
+
+v2.59
+- 'Manage Types' now has option to reset the type list.
+- File Editor no longer keeps values of fields when switching tags.
+- Default Settings set in the 'Settings' menu now persist after running in the Editor.
+- 'Exists' action now switches to the next state correctly.
+
+v2.58
+- Settings can now be set from the Settings window accessible from ‘Assets > Easy Save 2 > Settings…’.
+	- This allows access to Default Settings, Tools, Information, Change Log and Readme.
+- File Editor can now open and edit encrypted tags.
+- Playmaker actions now have an ‘error’ event to allow handling of errors.
+- Fixed minor bug where File Editor was not correctly reset.
+- Playmaker Load actions now require a defined variable from the variable list.
+
+v2.57
+- Removed unnecessary libraries included in v2.56.
+
+v2.56
+- Added File Editor (beta), so you can view and edit files created with Easy Save.
+- The ‘Does Not Exist’ state of the Playmaker ‘Exists’ action is no longer required.
+- Fixed issue where adding a custom Component type would not work.
+
+v2.55
+- Added support for saving Mesh vertex colours (Colors32).
+- Exists action now uses same default save file as other actions.
+
+v2.54
+- You can now add support for your own types by going to Assets->Easy Save 2->Manage Types, or by creating your own ES2Type.
+- Restructured project.
+- Note that save files created with this version will not be supported by earlier versions.
+
+v2.53
+- Byte code stripping is now fixed.
+- Methods can now be called from the Editor.
+- Modified Examples to avoid naming conflicts.
+
+v2.52
+- Enum support added.
+- Various small tweaks for performance.
+
+v2.51
+
+- The method ES2.LoadAll is now included to load an entire file.
+- Playmaker action now has Load All and Save All actions to make saving/loading simpler.
+- Support for saving and loading Sprite has now been added.
+
+v2.49 & v2.50
+
+- Fixed bug where ES2Auto may fail under certain circumstances.
+- Updated examples.
+
+v2.48
+
+- Playmaker action has been modified so that filename (path) can include parameters.
+- A new method, ES2.LoadAll(string path) has been added to load all data from a file as System.Objects.
+- Small bug fixes.
+
+v2.47
+
+- Added a Delete(tag) method to ES2Writer.
+- Fixed a bug where encryption would cause an exception on Unity Web Player.
+- More performance enhancements.
+
+v2.46
+
+- Re-enabled defaultPCDataPath.
+- More performance tweaks to get even more efficiency out of ES2.
+
+v2.44 & v2.45
+
+- Small bug fixes.
+
+v2.43
+
+- Performance updates and restructuring in anticipation for XML support.
+- Reintroduced defaultPCPath and defaultMacPath.
+- Added DownloadFilenames and GetFilenames methods to ES2Web.
+  (Note that you will need to use the latest ES2.php file supplied with this version)
+- Added SaveRaw(string) and UploadRaw(byte[]) methods.
+- Update to Playmaker action.
+
+v2.41
+
+- Changed how WP8 and Metro check if a file exists so it’s more efficient.
+- Fixed bug where it would not be possible to save a byte array.
+
+v2.40
+
+- Added ability to rename Tags using ES2.Rename.
+- More performance enhancements.
+- Fixed bug where ES2.SaveRaw would return blank array on Web Player.
+
+v2.38 & v2.39
+
+- Major performance updates.
+- Added Playmaker actions to get dataPath, persistentDataPath and streamingAssetsPath.
+- Windows Phone 8, Windows Store and Playmaker functionality is now manually enabled from the ‘Assets/Easy Save 2’ menu.
+- Various small bug fixes.
+
+v2.37
+
+- Fixed issue where sometimes Unity wouldn't be able to parse the version number.
+- Fixed missing references in some examples.
+
+v2.35 & v2.36
+
+- Worked around a bug in Unity where compilation would fail when using iOS stripping and Dictionaries.
+- Fixed an issue where sometimes Unity would hang on import.
+
+v2.34
+
+- Easy Save now automatically disables Metro and WP8 files in Unity 3.5.
+- PlayMaker action is automatically enabled or disabled depending on whether PlayMaker is detected.
+- Fixed an issue where ES2Web would not work on WP8 and Metro.
+- Support for TreeInstance and Sprite has been temporarily disabled (support coming in a future update.
+
+v2.33
+
+- Updated the Easy Save Editor integration ('Assets/Easy Save 2' menu):
+	- Ability to Install, Update and Remove PlayMaker actions from 'Assets/Easy Save 2'.
+	- You can now clear the Default Save Folder from 'Assets/Easy Save 2'.
+	- Uninstall and Clean Up Easy Save 2 from 'Assets/Easy Save 2'.
+	- Menu items are now neatly organised.
+
+v2.32
+
+- Support added for Rect, Bounds, TreeInstance and Sprite classes.
+- ES2Web now allows you to choose whether to hash passwords using the hashType property.
+- ES2.php has been modified to allow easier integration with login systems.
+
+v2.31
+
+- Minor fixes for ES2Reader.
+- Error messages are more informative.
+
+v2.30
+
+- Added ES2Writer and ES2Reader for high performance saving and loading.
+- Major performance updates.
+
+v2.29
+
+- Support added for Windows Store (Metro).
+- Bugfixes for Windows Phone 8 support.
+- Added GetFiles(string path, string extension) method which allows you to get a list of files with a given extension.
+- Changelog is now included with Easy Save 2.
+- ES2 now uses two DLLs instead of many DLLs: ES2.dll and MoodkieSecurity.dll.
+- DLLs have been moved from /Plugins/Easy Save 2/Libraries/ to /Plugins/

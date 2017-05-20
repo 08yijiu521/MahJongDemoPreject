@@ -1,0 +1,25 @@
+message ResGetGoodInfo{
+         optional string name=1;
+         optional int32 price=2;
+         optional string instruction=3;
+         optional int32 sort=4;
+         optional int32 effect=5;
+         optional int32 resault=6;
+}
+message ResGetWeaponInfo{
+         optional int32 id=1;
+         optional string name=2;
+         optional int32 price=3;
+         optional string instruction=4;
+         optional string effect=5;
+         optional int32 resault=6;
+}
+message ResGetEquipedWeapon{
+         optional string helmet=1;
+         optional string neck=2;
+         optional string arms=3;
+         optional string cloth=4;
+         optional string belt=5;
+         optional string shoes=6;
+         optional int32 resault=7;
+}
